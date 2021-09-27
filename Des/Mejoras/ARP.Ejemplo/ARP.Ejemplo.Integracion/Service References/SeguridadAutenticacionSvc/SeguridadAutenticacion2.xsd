@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.AdminSeguridad.com/2011/05/AutenticacionSeguridad/" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.AdminSeguridad.com/2011/05/AutenticacionSeguridad/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd2" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" />
+  <xs:element name="AutenticarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="pDatosIniciales" nillable="true" type="q1:DatosIniciales" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="AutenticarUsuarioResult" nillable="true" type="q2:Resultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

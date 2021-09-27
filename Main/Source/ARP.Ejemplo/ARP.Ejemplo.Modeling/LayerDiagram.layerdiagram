@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="68094432-3d2b-4a00-bdf9-cb20d06bdb35" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="7f97b44c-3132-4c47-afde-46c318fc3878" name="Business">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="86439123-e703-4224-86f3-83e977e707ec" direction="Forward">
+          <layerMoniker Id="08e39d08-991e-4395-b3ec-eba4cb2160ad" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="7da93cd9-9c08-47b5-8870-e5d553c1c5cb" direction="Forward">
+          <layerMoniker Id="944c4f2a-4f0d-4259-9ca3-29cd5c673d57" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="50902d99-2e61-4cc2-8f8a-98538a53d3aa" direction="Forward">
+          <layerMoniker Id="846b7dc4-1ba8-4a70-bd1e-d3c135887ced" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="3612125b-cb39-4641-bc9e-01e7c6040d2e" name="Components">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="62024298-5edc-4ff9-a9f8-7c87270c371e" direction="Forward">
+              <layerMoniker Id="412e42f7-6735-455a-803d-c2114bc7d6cb" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="daec1c1b-e29c-4b84-925b-9c795551dbf4" name="ARP.Ejemplo.Negocio">
+              <ArtifactNode Label="ARP.Ejemplo.Negocio" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Negocio/ARP.Ejemplo.Negocio.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=ARP.Ejemplo.Negocio)" Label="ARP.Ejemplo.Negocio.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="412e42f7-6735-455a-803d-c2114bc7d6cb" name="Interfaces">
+          <references>
+            <reference Id="8d42e4e4-61b4-4536-975f-46e2000868c1" name="ARP.Ejemplo.Interfaces">
+              <ArtifactNode Label="ARP.Ejemplo.Interfaces" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Interfaces/ARP.Ejemplo.Interfaces.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=ARP.Ejemplo.Interfaces)" Label="ARP.Ejemplo.Interfaces.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="9c2da690-f033-423c-931e-2b2a518591cf" name="Test">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="9eefbe88-1135-47cb-a4ec-fc5b642ca5b9" direction="Forward">
+              <layerMoniker Id="3612125b-cb39-4641-bc9e-01e7c6040d2e" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="7db5d95d-d067-4768-a6e6-4650a90e84b9" direction="Forward">
+              <layerMoniker Id="412e42f7-6735-455a-803d-c2114bc7d6cb" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="fe028f86-3de3-40c7-b1e2-217e36d7e762" name="ARP.Ejemplo.Pruebas">
+              <ArtifactNode Label="ARP.Ejemplo.Pruebas" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Pruebas/ARP.Ejemplo.Pruebas.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=ARP.Ejemplo.Pruebas)" Label="ARP.Ejemplo.Pruebas.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="08e39d08-991e-4395-b3ec-eba4cb2160ad" name="Data">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="71caf383-7401-469b-9702-276162858178" direction="Forward">
+          <layerMoniker Id="944c4f2a-4f0d-4259-9ca3-29cd5c673d57" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="debcf17c-3ea2-42ec-8f69-5e0af41f7659" name="ARP.Ejemplo.Datos">
+          <ArtifactNode Label="ARP.Ejemplo.Datos" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Datos/ARP.Ejemplo.Datos.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ARP.Ejemplo.Datos)" Label="ARP.Ejemplo.Datos.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="3517108e-6341-4360-9869-47fb3f03d796" name="Service">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="aac04cdb-8071-4ca6-8063-74fd159d5ca2" direction="Forward">
+          <layerMoniker Id="7f97b44c-3132-4c47-afde-46c318fc3878" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="5ad1fe8e-2444-418b-a457-44586ff874a4" name="ARP.Ejemplo.Servicios">
+          <ArtifactNode Label="ARP.Ejemplo.Servicios" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Servicios/ARP.Ejemplo.Servicios.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ARP.Ejemplo.Servicios)" Label="ARP.Ejemplo.Servicios.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="77f64e76-3783-49a6-b0e3-c859a495fe78" name="UI">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="cb86bbf0-4afa-4883-89c1-95a841781010" direction="Forward">
+          <layerMoniker Id="3517108e-6341-4360-9869-47fb3f03d796" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="d1307d05-cdff-4fd7-8fef-196f1069c4d3" direction="Forward">
+          <layerMoniker Id="944c4f2a-4f0d-4259-9ca3-29cd5c673d57" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2205d7c0-ec49-4d15-9bed-83b75a242af4" name="ARP.Ejemplo.WebExterno">
+          <ArtifactNode Label="ARP.Ejemplo.WebExterno" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.WebExterno/ARP.Ejemplo.WebExterno.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ARP.Ejemplo.WebExterno)" Label="ARP.Ejemplo.WebExterno.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="944c4f2a-4f0d-4259-9ca3-29cd5c673d57" name="Common">
+      <references>
+        <reference Id="7fe29182-e2bb-49d7-bd07-4b3b4b3647ed" name="ARP.Ejemplo.Comun">
+          <ArtifactNode Label="ARP.Ejemplo.Comun" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Comun/ARP.Ejemplo.Comun.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ARP.Ejemplo.Comun)" Label="ARP.Ejemplo.Comun.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="846b7dc4-1ba8-4a70-bd1e-d3c135887ced" name="Integration">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9e10092e-f6dd-4a0e-ace0-16df5687c236" direction="Forward">
+          <layerMoniker Id="08e39d08-991e-4395-b3ec-eba4cb2160ad" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="2be0b789-cc5b-40b9-9de1-4ccaf0156510" direction="Forward">
+          <layerMoniker Id="944c4f2a-4f0d-4259-9ca3-29cd5c673d57" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4f1274ba-8758-4ccc-a6a2-01958f67125d" name="ARP.Ejemplo.Integracion">
+          <ArtifactNode Label="ARP.Ejemplo.Integracion" Category="CodeSchema_Project" Id="(Assembly=../ARP.Ejemplo.Integracion/ARP.Ejemplo.Integracion.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ARP.Ejemplo.Integracion)" Label="ARP.Ejemplo.Integracion.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

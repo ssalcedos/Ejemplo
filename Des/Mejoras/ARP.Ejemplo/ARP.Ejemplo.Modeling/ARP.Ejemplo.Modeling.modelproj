@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{714db334-3ec9-4b10-beff-8716f720086a}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>ARP.Ejemplo.Modeling</Name>
+    <RootNamespace>ARP.Ejemplo.Modeling</RootNamespace>
+    <ValidateArchitecture>true</ValidateArchitecture>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ARP.Ejemplo.Modeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARP.Ejemplo.Comun\ARP.Ejemplo.Comun.csproj">
+      <Name>ARP.Ejemplo.Comun</Name>
+      <Project>{de8c36bc-504a-4118-9ee9-1322e60f8888}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Datos\ARP.Ejemplo.Datos.csproj">
+      <Name>ARP.Ejemplo.Datos</Name>
+      <Project>{a4522636-d78d-422d-868d-0d62831b1d3c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Integracion\ARP.Ejemplo.Integracion.csproj">
+      <Name>ARP.Ejemplo.Integracion</Name>
+      <Project>{7ac67927-5af7-4f2e-b561-469e8f8dfb45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Interfaces\ARP.Ejemplo.Interfaces.csproj">
+      <Name>ARP.Ejemplo.Interfaces</Name>
+      <Project>{ade916c1-4b17-4105-91bc-a7c2d4585c99}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Negocio\ARP.Ejemplo.Negocio.csproj">
+      <Name>ARP.Ejemplo.Negocio</Name>
+      <Project>{4811eca0-bb02-42a8-8aca-37a87abf0377}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Pruebas\ARP.Ejemplo.Pruebas.csproj">
+      <Name>ARP.Ejemplo.Pruebas</Name>
+      <Project>{f6b03a7c-b95d-4064-8cbb-c159dff68012}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.Servicios\ARP.Ejemplo.Servicios.csproj">
+      <Name>ARP.Ejemplo.Servicios</Name>
+      <Project>{6bf3596d-d5fe-4542-980d-57e901d54138}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ARP.Ejemplo.WebExterno\ARP.Ejemplo.WebExterno.csproj">
+      <Name>ARP.Ejemplo.WebExterno</Name>
+      <Project>{fecd24db-8aec-4544-a125-9e4238fcc9a5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

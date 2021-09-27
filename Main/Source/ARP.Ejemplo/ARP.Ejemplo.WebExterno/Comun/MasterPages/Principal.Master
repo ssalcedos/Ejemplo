@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs"
+    Inherits="ARP.Ejemplo.WebExterno.Comun.MasterPages.Principal" %>
+
+<%@ Register Src="Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>COLMENA Vida y Riesgos Profesionales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.4.1.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.pngFix.pack.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.prettyPhoto.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.jmpopups-0.5.1.js" />
+                <asp:ScriptReference Path="~/Scripts/Ejemplo.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <uc1:Header ID="Header1" runat="server" />
+        <div id="mainContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <uc2:Footer ID="Footer1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

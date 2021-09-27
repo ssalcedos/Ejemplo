@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d6989720-4c20-4ebb-a2ea-fef4dc779a80" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SeguridadUsuarios.wsdl" MetadataType="Wsdl" ID="2a39cb77-7fdb-4313-9ed4-d461a72acb6d" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?wsdl" />
+    <MetadataFile FileName="SeguridadUsuarios.xsd" MetadataType="Schema" ID="89028d60-2e7f-4a6d-8bae-9c7043cacce6" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd4" />
+    <MetadataFile FileName="SeguridadUsuarios4.xsd" MetadataType="Schema" ID="f25f0e8c-b6e6-4f32-9d59-563dd44aef36" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd1" />
+    <MetadataFile FileName="SeguridadUsuarios1.xsd" MetadataType="Schema" ID="6c5e47e8-4357-4881-a42e-df83b6f87da9" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd2" />
+    <MetadataFile FileName="SeguridadUsuarios2.xsd" MetadataType="Schema" ID="d96cae01-5c07-4bdd-89b9-29f9abce7d3a" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd3" />
+    <MetadataFile FileName="SeguridadUsuarios1.wsdl" MetadataType="Wsdl" ID="4fbd3b4b-4b38-4df9-9898-9f23089ce98d" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SeguridadUsuarios3.xsd" MetadataType="Schema" ID="32767ad3-f631-4c73-be2b-ceaf55024dfe" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd0" />
+    <MetadataFile FileName="SeguridadUsuarios.disco" MetadataType="Disco" ID="f64bdd96-09a0-4f7f-a2b2-30a06c7ea7ec" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?disco" />
+    <MetadataFile FileName="SeguridadUsuarios5.xsd" MetadataType="Schema" ID="19c2c161-541f-414c-892a-413789ed6589" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

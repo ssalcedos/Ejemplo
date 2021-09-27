@@ -1,0 +1,31 @@
+﻿/* GridView */
+.AspNet-GridView { font-size: 11.5px; }
+.AspNet-GridView table { width: 100%; }
+.AspNet-GridView th { background-color: #64A4D9; color: #FFFFFF; padding: 6px; text-decoration: none; text-align: left; font-size: 11.5px; }
+.AspNet-GridView th a { color:#FFF; }
+.AspNet-GridView th a:hover { color:#0ff; font-weight: bold; }
+.AspNet-GridView tr { background-color: #EBF1F7;}
+.AspNet-GridView tr.AspNet-GridView-Alternate { background-color: #fff; }
+.AspNet-GridView tr td { text-align: left; padding: 8px; vertical-align: top; }
+.AspNet-GridView tr td a { color:#64A4D9; font-weight: bold; }
+.AspNet-GridView tr td a:hover { color:#0C00FC; }
+.AspNet-GridView tr td a:visited { color:#8E07AA; }
+.AspNet-GridView tr.AspNet-GridView-Alternate td { text-align: left; padding: 8px; vertical-align: top; }
+.AspNet-GridView tr.AspNet-GridView-Alternate td a { color:#64A4D9; font-weight: bold; }
+.AspNet-GridView tr.AspNet-GridView-Alternate td a:hover { color:#0C00FC; }
+.AspNet-GridView tr.AspNet-GridView-Alternate td a:visited { color:#8E07AA; }
+
+/* Pagination */
+.Paginacion { height: 32px; background:#64a4d9; color:#FFF; font-size: 11.5px; vertical-align: middle; }
+.Paginacion table { width: 100%; border-spacing: 0px; height: 36px; }
+
+.paginacionIndicador { width: 250px; vertical-align: middle; padding-left: 5px; padding-bottom: 4px; border-right: 1px solid #fff; }
+.paginacionEventos { padding-left: 10px; vertical-align: middle; padding-bottom: 4px; }
+.paginacionPaginas { right: 0px; }
+
+.eventos * { vertical-align: top; padding: 0px; margin: 0px; }
+
+.paginas { float: right; height:36px !important; padding: 0px; background-color: #0c00fc; width: 210px; }
+.paginas .btnPrev { float: left; width: 22px; padding-top: 6px; }
+.paginas .text { float: left; width: 164px; text-align: center; margin: 0 auto; padding-top: 6px; }
+.paginas .btnNext { float: right; width: 22px; padding-top: 6px; }

@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Style Enforcer", "Code Style Enforcer", "{A2DB0DAF-2B7B-4E5B-8125-C9AB013664FA}"
+	ProjectSection(SolutionItems) = preProject
+		ImplementationRules.xml = ImplementationRules.xml
+		NameRules.xml = NameRules.xml
+		VisibilityRules.xml = VisibilityRules.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93A46B99-DF30-4D55-846A-10F3961DC682}"
+	ProjectSection(SolutionItems) = preProject
+		ARP.Ejemplo.vsmdi = ARP.Ejemplo.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentacion", "Presentacion", "{C7200F24-8160-4B67-B288-02DCD2A62361}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negocio", "Negocio", "{B1421A57-AF34-46E4-AD27-84CE227ACCED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comun", "Comun", "{A62FEA12-FE61-4D1F-AC0F-2D71DE96AF1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{2FA0BDC7-9E2C-4B11-ADAA-3294F07BC549}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pruebas", "Pruebas", "{7FE031C0-29DB-44BE-BF01-0A5DFF220063}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicios", "Servicios", "{E8395A71-5010-4F54-BA5F-E1733B325ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Negocio", "ARP.Ejemplo.Negocio\ARP.Ejemplo.Negocio.csproj", "{4811ECA0-BB02-42A8-8ACA-37A87ABF0377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Integracion", "ARP.Ejemplo.Integracion\ARP.Ejemplo.Integracion.csproj", "{7AC67927-5AF7-4F2E-B561-469E8F8DFB45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Comun", "ARP.Ejemplo.Comun\ARP.Ejemplo.Comun.csproj", "{DE8C36BC-504A-4118-9EE9-1322E60F8888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Datos", "ARP.Ejemplo.Datos\ARP.Ejemplo.Datos.csproj", "{A4522636-D78D-422D-868D-0D62831B1D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Interfaces", "ARP.Ejemplo.Interfaces\ARP.Ejemplo.Interfaces.csproj", "{ADE916C1-4B17-4105-91BC-A7C2D4585C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.WebExterno", "ARP.Ejemplo.WebExterno\ARP.Ejemplo.WebExterno.csproj", "{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6BF3596D-D5FE-4542-980D-57E901D54138} = {6BF3596D-D5FE-4542-980D-57E901D54138}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Servicios", "ARP.Ejemplo.Servicios\ARP.Ejemplo.Servicios.csproj", "{6BF3596D-D5FE-4542-980D-57E901D54138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARP.Ejemplo.Pruebas", "ARP.Ejemplo.Pruebas\ARP.Ejemplo.Pruebas.csproj", "{F6B03A7C-B95D-4064-8CBB-C159DFF68012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagramas", "Diagramas", "{388BA3E8-BD9B-4F92-AE63-DB9637F19474}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ARP.Ejemplo.Modeling", "ARP.Ejemplo.Modeling\ARP.Ejemplo.Modeling.modelproj", "{714DB334-3EC9-4B10-BEFF-8716F720086A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.168.103:8090/tfs/aplicacionesarp
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ARP.Ejemplo.Negocio\\ARP.Ejemplo.Negocio.csproj
+		SccProjectTopLevelParentUniqueName1 = ARP.Ejemplo.sln
+		SccProjectName1 = ARP.Ejemplo.Negocio
+		SccLocalPath1 = ARP.Ejemplo.Negocio
+		SccProjectUniqueName2 = ARP.Ejemplo.Integracion\\ARP.Ejemplo.Integracion.csproj
+		SccProjectTopLevelParentUniqueName2 = ARP.Ejemplo.sln
+		SccProjectName2 = ARP.Ejemplo.Integracion
+		SccLocalPath2 = ARP.Ejemplo.Integracion
+		SccProjectUniqueName3 = ARP.Ejemplo.Comun\\ARP.Ejemplo.Comun.csproj
+		SccProjectTopLevelParentUniqueName3 = ARP.Ejemplo.sln
+		SccProjectName3 = ARP.Ejemplo.Comun
+		SccLocalPath3 = ARP.Ejemplo.Comun
+		SccProjectUniqueName4 = ARP.Ejemplo.Datos\\ARP.Ejemplo.Datos.csproj
+		SccProjectTopLevelParentUniqueName4 = ARP.Ejemplo.sln
+		SccProjectName4 = ARP.Ejemplo.Datos
+		SccLocalPath4 = ARP.Ejemplo.Datos
+		SccProjectUniqueName5 = ARP.Ejemplo.Interfaces\\ARP.Ejemplo.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName5 = ARP.Ejemplo.sln
+		SccProjectName5 = ARP.Ejemplo.Interfaces
+		SccLocalPath5 = ARP.Ejemplo.Interfaces
+		SccProjectUniqueName6 = ARP.Ejemplo.WebExterno\\ARP.Ejemplo.WebExterno.csproj
+		SccProjectTopLevelParentUniqueName6 = ARP.Ejemplo.sln
+		SccProjectName6 = ARP.Ejemplo.WebExterno
+		SccLocalPath6 = ARP.Ejemplo.WebExterno
+		SccProjectUniqueName7 = ARP.Ejemplo.Servicios\\ARP.Ejemplo.Servicios.csproj
+		SccProjectTopLevelParentUniqueName7 = ARP.Ejemplo.sln
+		SccProjectName7 = ARP.Ejemplo.Servicios
+		SccLocalPath7 = ARP.Ejemplo.Servicios
+		SccProjectUniqueName8 = ARP.Ejemplo.Pruebas\\ARP.Ejemplo.Pruebas.csproj
+		SccProjectTopLevelParentUniqueName8 = ARP.Ejemplo.sln
+		SccProjectName8 = ARP.Ejemplo.Pruebas
+		SccLocalPath8 = ARP.Ejemplo.Pruebas
+		SccProjectUniqueName9 = ARP.Ejemplo.Modeling\\ARP.Ejemplo.Modeling.modelproj
+		SccProjectTopLevelParentUniqueName9 = ARP.Ejemplo.sln
+		SccProjectName9 = ARP.Ejemplo.Modeling
+		SccLocalPath9 = ARP.Ejemplo.Modeling
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ARP.Ejemplo.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4811ECA0-BB02-42A8-8ACA-37A87ABF0377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4811ECA0-BB02-42A8-8ACA-37A87ABF0377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4811ECA0-BB02-42A8-8ACA-37A87ABF0377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4811ECA0-BB02-42A8-8ACA-37A87ABF0377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC67927-5AF7-4F2E-B561-469E8F8DFB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC67927-5AF7-4F2E-B561-469E8F8DFB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC67927-5AF7-4F2E-B561-469E8F8DFB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC67927-5AF7-4F2E-B561-469E8F8DFB45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8C36BC-504A-4118-9EE9-1322E60F8888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8C36BC-504A-4118-9EE9-1322E60F8888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8C36BC-504A-4118-9EE9-1322E60F8888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8C36BC-504A-4118-9EE9-1322E60F8888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4522636-D78D-422D-868D-0D62831B1D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4522636-D78D-422D-868D-0D62831B1D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4522636-D78D-422D-868D-0D62831B1D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4522636-D78D-422D-868D-0D62831B1D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE916C1-4B17-4105-91BC-A7C2D4585C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE916C1-4B17-4105-91BC-A7C2D4585C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE916C1-4B17-4105-91BC-A7C2D4585C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE916C1-4B17-4105-91BC-A7C2D4585C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF3596D-D5FE-4542-980D-57E901D54138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF3596D-D5FE-4542-980D-57E901D54138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF3596D-D5FE-4542-980D-57E901D54138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF3596D-D5FE-4542-980D-57E901D54138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B03A7C-B95D-4064-8CBB-C159DFF68012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B03A7C-B95D-4064-8CBB-C159DFF68012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B03A7C-B95D-4064-8CBB-C159DFF68012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B03A7C-B95D-4064-8CBB-C159DFF68012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714DB334-3EC9-4B10-BEFF-8716F720086A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714DB334-3EC9-4B10-BEFF-8716F720086A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714DB334-3EC9-4B10-BEFF-8716F720086A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714DB334-3EC9-4B10-BEFF-8716F720086A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FECD24DB-8AEC-4544-A125-9E4238FCC9A5} = {C7200F24-8160-4B67-B288-02DCD2A62361}
+		{4811ECA0-BB02-42A8-8ACA-37A87ABF0377} = {B1421A57-AF34-46E4-AD27-84CE227ACCED}
+		{7AC67927-5AF7-4F2E-B561-469E8F8DFB45} = {B1421A57-AF34-46E4-AD27-84CE227ACCED}
+		{ADE916C1-4B17-4105-91BC-A7C2D4585C99} = {B1421A57-AF34-46E4-AD27-84CE227ACCED}
+		{DE8C36BC-504A-4118-9EE9-1322E60F8888} = {A62FEA12-FE61-4D1F-AC0F-2D71DE96AF1C}
+		{A4522636-D78D-422D-868D-0D62831B1D3C} = {2FA0BDC7-9E2C-4B11-ADAA-3294F07BC549}
+		{F6B03A7C-B95D-4064-8CBB-C159DFF68012} = {7FE031C0-29DB-44BE-BF01-0A5DFF220063}
+		{6BF3596D-D5FE-4542-980D-57E901D54138} = {E8395A71-5010-4F54-BA5F-E1733B325ADF}
+		{714DB334-3EC9-4B10-BEFF-8716F720086A} = {388BA3E8-BD9B-4F92-AE63-DB9637F19474}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		CodeStyleEnforcer_Active = -1
+		CodeStyleEnforcer_RulesLocation = 0
+	EndGlobalSection
+EndGlobal

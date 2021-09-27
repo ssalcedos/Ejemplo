@@ -1,0 +1,18 @@
+﻿<%--<%@ Register Assembly="eWorld.UI" Namespace="eWorld.UI" TagPrefix="ew" %>--%>
+<%--<ew:CalendarPopup runat="server" ControlDisplay="LabelImage" ImageUrl="~/App_Themes/Encuestas/images/calendar.png" ImageAlign="Middle">
+</ew:CalendarPopup>--%>
+<%-- Control para los GridView del sitio --%>
+<asp:GridView runat="server" SkinId="Grilla" AllowPaging="True" PageSize="20" PagerSettings-Visible="false" AllowSorting="True" AutoGenerateColumns="False">
+    <PagerSettings Visible="False"></PagerSettings>
+    <SelectedRowStyle CssClass="SelectedRow" />
+</asp:GridView>
+<%-- Control para las imagenes del sitio --%>
+<asp:Image runat="server" SkinId="LoadingImg" ImageUrl="~/App_Themes/Colmena/images/loading.gif" ImageAlign="Middle" ToolTip="Procesando... Por favor espere." />
+<asp:Image runat="server" SkinID="LogoColmena" ImageUrl="~/App_Themes/Colmena/images/logo.png" ImageAlign="Middle" ToolTip="COLMENA Vida y Riesgos Profesionales" />
+<asp:Image runat="server" SkinID="LogoPortal" ImageUrl="~/App_Themes/Colmena/images/star.png" ImageAlign="Middle" ToolTip="" />
+
+<asp:Image runat="server" SkinID="Accion_Editar" ImageUrl="~/App_Themes/Colmena/images/editarBtn.png" ImageAlign="Middle" CssClass="btnEdit" />
+<asp:Image runat="server" SkinID="BajarExcel" ImageUrl="~/App_Themes/Colmena/images/excel_btn.png" ImageAlign="Middle" CssClass="btnExcel" />
+
+<asp:LinkButton runat="server" SkinID="BajarExcel" ToolTip="Bajar a un archivo de Excel" CssClass="bajarExcel" />
+<asp:LinkButton runat="server" SkinID="BajarContactos" ToolTip="Bajar a un archivo de Excel todos los contactos" CssClass="bajarContactos" />

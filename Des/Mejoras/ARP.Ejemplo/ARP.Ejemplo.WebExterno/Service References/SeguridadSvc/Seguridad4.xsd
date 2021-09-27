@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="AplicacionFault">
+    <xs:sequence>
+      <xs:element name="Codigo" nillable="true" type="xs:string" />
+      <xs:element name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element name="Estado" nillable="true" type="xs:string" />
+      <xs:element name="Tipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AplicacionFault" nillable="true" type="tns:AplicacionFault" />
+  <xs:complexType name="NegocioFault">
+    <xs:sequence>
+      <xs:element name="Codigo" nillable="true" type="xs:string" />
+      <xs:element name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element name="Estado" nillable="true" type="xs:string" />
+      <xs:element name="Tipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NegocioFault" nillable="true" type="tns:NegocioFault" />
+  <xs:complexType name="DatosFault">
+    <xs:sequence>
+      <xs:element name="Codigo" nillable="true" type="xs:string" />
+      <xs:element name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element name="Estado" nillable="true" type="xs:string" />
+      <xs:element name="Tipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DatosFault" nillable="true" type="tns:DatosFault" />
+</xs:schema>

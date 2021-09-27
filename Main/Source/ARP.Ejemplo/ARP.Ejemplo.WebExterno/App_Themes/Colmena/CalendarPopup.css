@@ -1,0 +1,80 @@
+﻿/* Estilos CalendarPopup */
+.CalendarPopup
+{
+    font-family: Verdana, Arial;
+    font-size: 10px;
+    background-color: #FFF;
+}
+.CalendarPopup img
+{
+    vertical-align: middle !important;
+    margin-bottom: 8px !important;
+    margin-left: -2px;
+}
+.CalendarPopup table
+{
+    background-color: #FFF;
+    padding: 2px;
+    margin: 2px;
+}
+.ButtonStyle 
+{
+}
+.WeekdayStyle
+{
+    padding: 2px;
+    margin: 2px;
+}
+.WeekendStyle
+{
+    color: #999999;
+    padding: 2px;
+    margin: 2px;
+}
+.OffMonthStyle
+{
+    color: #DBDBDB;
+    padding: 2px;
+    margin: 2px;
+}
+.SelectedDateStyle
+{
+    color: #000;
+    font-weight: bold;
+    background-color: #0099FF;
+}
+.MonthHeaderStyle
+{
+    padding: 2px;
+    margin: 2px;
+}
+.DayHeaderStyle
+{
+    background-color: #DBDBDB;
+    padding: 2px;
+    margin: 2px;
+}
+.ClearDateStyle
+{
+}
+.GoToTodayStyle
+{
+}
+.TodayDayStyle
+{
+}
+.SpecialDayStyle
+{
+}
+.MonthYearItemStyle
+{
+    background-color: #FFF;
+    padding: 2px;
+    margin: 2px;
+}
+.MonthYearSelectedItemStyle
+{
+}
+.DisabledDayStyle
+{
+}

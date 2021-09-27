@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd2" namespace="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" />
+  <xs:element name="AutenticarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="pAutenticacion" nillable="true" type="q1:Autenticacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="AutenticarUsuarioResult" nillable="true" type="q2:ResultadoAutenticacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarContrasena">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q3:ContrasenaCambio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarContrasenaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="CambiarContrasenaResult" nillable="true" type="q4:Respuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUrl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q5:ContrasenaCambio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="ObtenerUrlResult" nillable="true" type="q6:ContrasenaCambio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarPreguntaRespuestaSecreta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q7:ContrasenaCambio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarPreguntaRespuestaSecretaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" minOccurs="0" name="ValidarPreguntaRespuestaSecretaResult" nillable="true" type="q8:ContrasenaCambio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

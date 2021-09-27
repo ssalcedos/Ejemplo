@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FECD24DB-8AEC-4544-A125-9E4238FCC9A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARP.Ejemplo.WebExterno</RootNamespace>
+    <AssemblyName>ARP.Ejemplo.WebExterno</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ExtendedCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ARP.Roles">
+      <HintPath>..\Referencias\ARP.Roles.dll</HintPath>
+    </Reference>
+    <Reference Include="BCSC.Comun.Encripcion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Referencias\BCSC.Comun.Encripcion.dll</HintPath>
+    </Reference>
+    <Reference Include="Cripto">
+      <HintPath>..\Referencias\Cripto.dll</HintPath>
+    </Reference>
+    <Reference Include="SEG2000COM">
+      <HintPath>..\Referencias\SEG2000COM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Colmena\CalendarPopup.css" />
+    <Content Include="App_Themes\Colmena\Colmena.css" />
+    <Content Include="App_Themes\Colmena\filters.css" />
+    <Content Include="App_Themes\Colmena\GridView.css" />
+    <Content Include="App_Themes\Colmena\images\add_btn.png" />
+    <Content Include="App_Themes\Colmena\images\add_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\administracion_btn.png" />
+    <Content Include="App_Themes\Colmena\images\administracion_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\bg-btn-blue.png" />
+    <Content Include="App_Themes\Colmena\images\bg-btn-orange.png" />
+    <Content Include="App_Themes\Colmena\images\calendar.png" />
+    <Content Include="App_Themes\Colmena\images\consultas_btn.png" />
+    <Content Include="App_Themes\Colmena\images\consultas_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\contactsmas_btn.png" />
+    <Content Include="App_Themes\Colmena\images\contactsmas_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\contacts_btn.png" />
+    <Content Include="App_Themes\Colmena\images\contacts_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\contrato_btn.png" />
+    <Content Include="App_Themes\Colmena\images\contrato_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\editarBtn.png" />
+    <Content Include="App_Themes\Colmena\images\editarBtn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\errorAcceso.png" />
+    <Content Include="App_Themes\Colmena\images\errorPage.png" />
+    <Content Include="App_Themes\Colmena\images\error_msg.png" />
+    <Content Include="App_Themes\Colmena\images\excel_btn.png" />
+    <Content Include="App_Themes\Colmena\images\excel_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\filter-nav-bg-hover-ie.png" />
+    <Content Include="App_Themes\Colmena\images\filter-nav-bg-ie.png" />
+    <Content Include="App_Themes\Colmena\images\FondoInicioSesion.png" />
+    <Content Include="App_Themes\Colmena\images\front-bg.gif" />
+    <Content Include="App_Themes\Colmena\images\fw_btn.png" />
+    <Content Include="App_Themes\Colmena\images\fw_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\hdft_bg.jpg" />
+    <Content Include="App_Themes\Colmena\images\help_btn.png" />
+    <Content Include="App_Themes\Colmena\images\help_btn_over.png" />
+    <Content Include="App_Themes\Colmena\images\help_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\information.png" />
+    <Content Include="App_Themes\Colmena\images\inicio_btn.png" />
+    <Content Include="App_Themes\Colmena\images\inicio_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\instrumentos_btn.png" />
+    <Content Include="App_Themes\Colmena\images\instrumentos_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\latLeft.jpg" />
+    <Content Include="App_Themes\Colmena\images\latRight.jpg" />
+    <Content Include="App_Themes\Colmena\images\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\loading.gif" />
+    <Content Include="App_Themes\Colmena\images\logo.png" />
+    <Content Include="App_Themes\Colmena\images\logoMiniterioPSocuial.jpg" />
+    <Content Include="App_Themes\Colmena\images\logoUjaveriana.jpg" />
+    <Content Include="App_Themes\Colmena\images\menu.png" />
+    <Content Include="App_Themes\Colmena\images\ok_msg.png" />
+    <Content Include="App_Themes\Colmena\images\pagination.jpg" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="App_Themes\Colmena\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="App_Themes\Colmena\images\rw_btn.png" />
+    <Content Include="App_Themes\Colmena\images\rw_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\search_btn.png" />
+    <Content Include="App_Themes\Colmena\images\search_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\sede_btn.png" />
+    <Content Include="App_Themes\Colmena\images\sede_btn_sel.png" />
+    <Content Include="App_Themes\Colmena\images\select.png" />
+    <Content Include="App_Themes\Colmena\images\select02.png" />
+    <Content Include="App_Themes\Colmena\images\star.png" />
+    <Content Include="App_Themes\Colmena\images\tabsbackground.png" />
+    <Content Include="App_Themes\Colmena\images\tipsy-east.gif" />
+    <Content Include="App_Themes\Colmena\images\tipsy-north.gif" />
+    <Content Include="App_Themes\Colmena\images\tipsy-south.gif" />
+    <Content Include="App_Themes\Colmena\images\tipsy-west.gif" />
+    <Content Include="App_Themes\Colmena\images\toggle_down_light.png" />
+    <Content Include="App_Themes\Colmena\images\toggle_up_dark.png" />
+    <Content Include="App_Themes\Colmena\images\warning_msg.png" />
+    <Content Include="App_Themes\Colmena\menu.css" />
+    <Content Include="App_Themes\Colmena\prettyPhoto.css" />
+    <Content Include="Comun\MasterPages\Footer.ascx" />
+    <Content Include="Comun\MasterPages\Header.ascx" />
+    <Content Include="Controles\Login.ascx" />
+    <Content Include="Controles\Permisos.ascx" />
+    <Content Include="Controles\PruebaSEG2000.ascx" />
+    <Content Include="Controles\ValidacionWin.ascx" />
+    <Content Include="ErrorAcceso.htm" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorGeneral.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Inicio\InicioWeb.aspx" />
+    <Content Include="Inicio\InicioWin.aspx" />
+    <Content Include="Inicio\PruebaSEG2000.aspx" />
+    <Content Include="RedireccionError401.htm" />
+    <Content Include="Scripts\Ejemplo.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="App_Themes\Colmena\Colmena.skin" />
+    <None Include="Properties\DataSources\ARP.AutenticacionSeguridad.Comun.Entidades.CambioContraseña.datasource" />
+    <None Include="Properties\DataSources\ARP.AutenticacionSeguridad.Comun.Entidades.ContrasenaCambio.datasource" />
+    <None Include="Properties\DataSources\ARP.AutenticacionSeguridad.Comun.Entidades.ResultadoAutenticacion.datasource" />
+    <None Include="Properties\DataSources\ARP.AutenticacionSeguridad.Comun.Entidades.ResultadoOperacion.datasource" />
+    <None Include="Properties\DataSources\ARP.Ejemplo.Comun.Entidades.ContrasenaCambio.datasource" />
+    <None Include="Properties\DataSources\ARP.Ejemplo.Comun.Entidades.Respuesta.datasource" />
+    <None Include="Properties\DataSources\ARP.Ejemplo.Comun.Entidades.ResultadoAutenticacion.datasource" />
+    <None Include="Service References\SeguridadSvc\Seguridad.disco" />
+    <None Include="Service References\SeguridadSvc\configuration91.svcinfo" />
+    <None Include="Service References\SeguridadSvc\configuration.svcinfo" />
+    <None Include="Service References\SeguridadSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery.jmpopups-0.5.1.js" />
+    <Content Include="Scripts\jquery.pngFix.pack.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\SeguridadSvc\Seguridad.wsdl" />
+    <None Include="Service References\SeguridadSvc\Seguridad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadSvc\Seguridad1.wsdl" />
+    <None Include="Service References\SeguridadSvc\Seguridad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadSvc\Seguridad2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadSvc\Seguridad3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadSvc\Seguridad4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comun\Controladores\Sesion.cs" />
+    <Compile Include="Comun\MasterPages\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\MasterPages\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\MasterPages\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\MasterPages\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\MasterPages\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\MasterPages\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\MensajesAutenticacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MensajesAutenticacion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\WebPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\WebUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Permisos.ascx.cs">
+      <DependentUpon>Permisos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Permisos.ascx.designer.cs">
+      <DependentUpon>Permisos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\PruebaSEG2000.ascx.cs">
+      <DependentUpon>PruebaSEG2000.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\PruebaSEG2000.ascx.designer.cs">
+      <DependentUpon>PruebaSEG2000.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ValidacionWin.ascx.cs">
+      <DependentUpon>ValidacionWin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ValidacionWin.ascx.designer.cs">
+      <DependentUpon>ValidacionWin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioWin.aspx.cs">
+      <DependentUpon>InicioWin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\InicioWin.aspx.designer.cs">
+      <DependentUpon>InicioWin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\PruebaSEG2000.aspx.cs">
+      <DependentUpon>PruebaSEG2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\PruebaSEG2000.aspx.designer.cs">
+      <DependentUpon>PruebaSEG2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Mensajes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mensajes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SeguridadSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comun\MasterPages\Principal.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARP.Ejemplo.Comun\ARP.Ejemplo.Comun.csproj">
+      <Project>{DE8C36BC-504A-4118-9EE9-1322E60F8888}</Project>
+      <Name>ARP.Ejemplo.Comun</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SeguridadSvc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Comun\MensajesAutenticacion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MensajesAutenticacion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comun\Mensajes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mensajes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8216</DevelopmentServerPort>
+          <DevelopmentServerVPath>/ARP.Ejemplo.WebExterno</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.AdminSeguridad.com/2011/05/Enumeraciones/" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Enumeraciones/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="CODIGO_RESULTADO">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoEspecificado" />
+      <xs:enumeration value="Ok" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CODIGO_RESULTADO" nillable="true" type="tns:CODIGO_RESULTADO" />
+</xs:schema>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/Imports">
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd0" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/" />
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd3" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" />
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd2" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" />
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd4" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Enumeraciones/" />
+      <xsd:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd5" namespace="http://schemas.ARP.AdminSeguridad.com/2010/08/Servicios/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarPreguntaRespuestaSecreta" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarPreguntaRespuestaSecretaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q1:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q2:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q3:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_CambiarContrasena_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContrasena" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_CambiarContrasena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContrasenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_CambiarContrasena_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q4:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_CambiarContrasena_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q5:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_CambiarContrasena_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q6:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarContrasenaAnteriorDeUsuario" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarContrasenaAnteriorDeUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q7:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q8:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q9:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ObtenerUrlCambioContrasena_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUrlCambioContrasena" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ObtenerUrlCambioContrasena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUrlCambioContrasenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ObtenerUrlCambioContrasena_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q10:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ObtenerUrlCambioContrasena_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q11:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ObtenerUrlCambioContrasena_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q12:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ConfirmarRegistroUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarRegistroUsuario" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ConfirmarRegistroUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarRegistroUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ConfirmarRegistroUsuario_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q13:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ConfirmarRegistroUsuario_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q14:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="SeguridadUsuarios_ConfirmarRegistroUsuario_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.ARP.AdminSeguridad.com/2011/05/Faults/" name="detail" element="q15:DatosFault" />
+  </wsdl:message>
+  <wsdl:portType name="SeguridadUsuarios">
+    <wsdl:operation name="ValidarPreguntaRespuestaSecreta">
+      <wsdl:input wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ValidarPreguntaRespuestaSecreta" message="tns:SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ValidarPreguntaRespuestaSecretaResponse" message="tns:SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/NegocioFault" name="NegocioFaultFault" message="tns:SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/DatosFault" name="DatosFaultFault" message="tns:SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_DatosFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/AplicacionFault" name="AplicacionFaultFault" message="tns:SeguridadUsuarios_ValidarPreguntaRespuestaSecreta_AplicacionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarContrasena">
+      <wsdl:input wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/CambiarContrasena" message="tns:SeguridadUsuarios_CambiarContrasena_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/CambiarContrasenaResponse" message="tns:SeguridadUsuarios_CambiarContrasena_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/NegocioFault" name="NegocioFaultFault" message="tns:SeguridadUsuarios_CambiarContrasena_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/DatosFault" name="DatosFaultFault" message="tns:SeguridadUsuarios_CambiarContrasena_DatosFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/AplicacionFault" name="AplicacionFaultFault" message="tns:SeguridadUsuarios_CambiarContrasena_AplicacionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarContrasenaAnteriorDeUsuario">
+      <wsdl:input wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ValidarContrasenaAnteriorDeUsuario" message="tns:SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ValidarContrasenaAnteriorDeUsuarioResponse" message="tns:SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/NegocioFault" name="NegocioFaultFault" message="tns:SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/DatosFault" name="DatosFaultFault" message="tns:SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_DatosFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/AplicacionFault" name="AplicacionFaultFault" message="tns:SeguridadUsuarios_ValidarContrasenaAnteriorDeUsuario_AplicacionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUrlCambioContrasena">
+      <wsdl:input wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ObtenerUrlCambioContrasena" message="tns:SeguridadUsuarios_ObtenerUrlCambioContrasena_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ObtenerUrlCambioContrasenaResponse" message="tns:SeguridadUsuarios_ObtenerUrlCambioContrasena_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/DatosFault" name="DatosFaultFault" message="tns:SeguridadUsuarios_ObtenerUrlCambioContrasena_DatosFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/AplicacionFault" name="AplicacionFaultFault" message="tns:SeguridadUsuarios_ObtenerUrlCambioContrasena_AplicacionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/NegocioFault" name="NegocioFaultFault" message="tns:SeguridadUsuarios_ObtenerUrlCambioContrasena_NegocioFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarRegistroUsuario">
+      <wsdl:input wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ConfirmarRegistroUsuario" message="tns:SeguridadUsuarios_ConfirmarRegistroUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/SeguridadUsuarios/ConfirmarRegistroUsuarioResponse" message="tns:SeguridadUsuarios_ConfirmarRegistroUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/AplicacionFault" name="AplicacionFaultFault" message="tns:SeguridadUsuarios_ConfirmarRegistroUsuario_AplicacionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/NegocioFault" name="NegocioFaultFault" message="tns:SeguridadUsuarios_ConfirmarRegistroUsuario_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://ARP.AdminSeguridad.com/2011/05/DatosFault" name="DatosFaultFault" message="tns:SeguridadUsuarios_ConfirmarRegistroUsuario_DatosFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

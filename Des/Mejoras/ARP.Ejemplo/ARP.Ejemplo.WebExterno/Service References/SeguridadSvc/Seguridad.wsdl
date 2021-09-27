@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Imports">
+      <xsd:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd0" namespace="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/" />
+      <xsd:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd4" namespace="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" />
+      <xsd:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd2" namespace="http://schemas.ARP.Ejemplo.com/2011/02/Entidades/" />
+      <xsd:import schemaLocation="http://localhost:8215/ARP.Ejemplo.Servicios/Seguridad.svc?xsd=xsd3" namespace="http://schemas.ARP.Ejemplo.com/2010/10/Enumeraciones/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Seguridad_AutenticarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_AutenticarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_AutenticarUsuario_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q1:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_AutenticarUsuario_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q2:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_AutenticarUsuario_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q3:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_CambiarContrasena_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContrasena" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_CambiarContrasena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarContrasenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_CambiarContrasena_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q4:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_CambiarContrasena_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q5:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_CambiarContrasena_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q6:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ObtenerUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUrl" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ObtenerUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ObtenerUrl_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q7:DatosFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ObtenerUrl_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q8:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ObtenerUrl_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q9:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ValidarPreguntaRespuestaSecreta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarPreguntaRespuestaSecreta" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ValidarPreguntaRespuestaSecreta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarPreguntaRespuestaSecretaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ValidarPreguntaRespuestaSecreta_AplicacionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q10:AplicacionFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ValidarPreguntaRespuestaSecreta_NegocioFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q11:NegocioFault" />
+  </wsdl:message>
+  <wsdl:message name="Seguridad_ValidarPreguntaRespuestaSecreta_DatosFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.ARP.com/AutenticacionSeguridad/2010/12/Faults" name="detail" element="q12:DatosFault" />
+  </wsdl:message>
+  <wsdl:portType name="Seguridad">
+    <wsdl:operation name="AutenticarUsuario">
+      <wsdl:input wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/AutenticarUsuario" message="tns:Seguridad_AutenticarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/AutenticarUsuarioResponse" message="tns:Seguridad_AutenticarUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/AutenticarUsuarioAplicacionFaultFault" name="AplicacionFaultFault" message="tns:Seguridad_AutenticarUsuario_AplicacionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/AutenticarUsuarioNegocioFaultFault" name="NegocioFaultFault" message="tns:Seguridad_AutenticarUsuario_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/AutenticarUsuarioDatosFaultFault" name="DatosFaultFault" message="tns:Seguridad_AutenticarUsuario_DatosFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarContrasena">
+      <wsdl:input wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/CambiarContrasena" message="tns:Seguridad_CambiarContrasena_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/CambiarContrasenaResponse" message="tns:Seguridad_CambiarContrasena_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/CambiarContrasenaAplicacionFaultFault" name="AplicacionFaultFault" message="tns:Seguridad_CambiarContrasena_AplicacionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/CambiarContrasenaNegocioFaultFault" name="NegocioFaultFault" message="tns:Seguridad_CambiarContrasena_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/CambiarContrasenaDatosFaultFault" name="DatosFaultFault" message="tns:Seguridad_CambiarContrasena_DatosFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUrl">
+      <wsdl:input wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ObtenerUrl" message="tns:Seguridad_ObtenerUrl_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ObtenerUrlResponse" message="tns:Seguridad_ObtenerUrl_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ObtenerUrlDatosFaultFault" name="DatosFaultFault" message="tns:Seguridad_ObtenerUrl_DatosFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ObtenerUrlNegocioFaultFault" name="NegocioFaultFault" message="tns:Seguridad_ObtenerUrl_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ObtenerUrlAplicacionFaultFault" name="AplicacionFaultFault" message="tns:Seguridad_ObtenerUrl_AplicacionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarPreguntaRespuestaSecreta">
+      <wsdl:input wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ValidarPreguntaRespuestaSecreta" message="tns:Seguridad_ValidarPreguntaRespuestaSecreta_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ValidarPreguntaRespuestaSecretaResponse" message="tns:Seguridad_ValidarPreguntaRespuestaSecreta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ValidarPreguntaRespuestaSecretaAplicacionFaultFault" name="AplicacionFaultFault" message="tns:Seguridad_ValidarPreguntaRespuestaSecreta_AplicacionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ValidarPreguntaRespuestaSecretaNegocioFaultFault" name="NegocioFaultFault" message="tns:Seguridad_ValidarPreguntaRespuestaSecreta_NegocioFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.ARP.Ejemplo.com/2011/02/Seguridad/Seguridad/ValidarPreguntaRespuestaSecretaDatosFaultFault" name="DatosFaultFault" message="tns:Seguridad_ValidarPreguntaRespuestaSecreta_DatosFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

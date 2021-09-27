@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ARP.Ejemplo.Servicios.Seguridad"
+    CodeBehind="Seguridad.svc.cs" %>

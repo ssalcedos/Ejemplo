@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.AdminSeguridad.com/2010/08/Servicios/" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.AdminSeguridad.com/2010/08/Servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="TIPO_RED">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoEspecificado" />
+      <xs:enumeration value="Extranet" />
+      <xs:enumeration value="Intranet" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TIPO_RED" nillable="true" type="tns:TIPO_RED" />
+</xs:schema>

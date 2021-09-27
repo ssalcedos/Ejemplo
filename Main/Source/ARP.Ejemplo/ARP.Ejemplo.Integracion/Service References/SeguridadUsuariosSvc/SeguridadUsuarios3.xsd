@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/" elementFormDefault="qualified" targetNamespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Contrasena/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd2" namespace="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" />
+  <xs:import schemaLocation="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadUsuarios.svc?xsd=xsd5" namespace="http://schemas.ARP.AdminSeguridad.com/2010/08/Servicios/" />
+  <xs:element name="ValidarPreguntaRespuestaSecreta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q1:CambioContrasena" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarPreguntaRespuestaSecretaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="ValidarPreguntaRespuestaSecretaResult" nillable="true" type="q2:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarContrasena">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q3:CambioContrasena" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarContrasenaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="CambiarContrasenaResult" nillable="true" type="q4:ResultadoOperacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarContrasenaAnteriorDeUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="pCambioContrasena" nillable="true" type="q5:CambioContrasena" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarContrasenaAnteriorDeUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="ValidarContrasenaAnteriorDeUsuarioResult" nillable="true" type="q6:ResultadoOperacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUrlCambioContrasena">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.ARP.AdminSeguridad.com/2010/08/Servicios/" minOccurs="0" name="pTipoUrl" type="q7:TIPO_RED" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUrlCambioContrasenaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="ObtenerUrlCambioContrasenaResult" nillable="true" type="q8:Url" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarRegistroUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="pConfirmarRegistroUsuario" nillable="true" type="q9:ConfirmarRegistroUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarRegistroUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.ARP.AdminSeguridad.com/2011/05/Datos/" minOccurs="0" name="ConfirmarRegistroUsuarioResult" nillable="true" type="q10:ResultadoOperacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

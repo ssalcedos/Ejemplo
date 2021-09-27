@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2731892d-ad4d-4e95-80f0-ec97645ac2ba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SeguridadAutenticacion.xsd" MetadataType="Schema" ID="4756fc74-e310-42d8-966c-3d01be749a18" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd1" />
+    <MetadataFile FileName="SeguridadAutenticacion1.xsd" MetadataType="Schema" ID="09e65753-1eac-43b3-b18f-495e0fab3f7e" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd2" />
+    <MetadataFile FileName="SeguridadAutenticacion.wsdl" MetadataType="Wsdl" ID="73c97ec7-2cd3-4f5d-a8ef-55245e5cafee" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?wsdl" />
+    <MetadataFile FileName="SeguridadAutenticacion2.xsd" MetadataType="Schema" ID="44e72f2f-94eb-43ec-aa4a-5fe939ba2684" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd0" />
+    <MetadataFile FileName="SeguridadAutenticacion1.wsdl" MetadataType="Wsdl" ID="f23e359e-9ad2-4efc-90ed-2abc76fd2f33" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SeguridadAutenticacion.disco" MetadataType="Disco" ID="fdadde86-b4b3-4996-8e43-66012978308d" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?disco" />
+    <MetadataFile FileName="SeguridadAutenticacion3.xsd" MetadataType="Schema" ID="f179e8b3-648b-49e9-b89e-a2c8891c01aa" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd3" />
+    <MetadataFile FileName="SeguridadAutenticacion4.xsd" MetadataType="Schema" ID="5275f702-3976-4979-bd3d-5b3f43118a5b" SourceId="1" SourceUrl="http://boa02inte137.fs.net:8211/ARP.AdminSeguridad.ServiciosPublicos/SeguridadAutenticacion.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

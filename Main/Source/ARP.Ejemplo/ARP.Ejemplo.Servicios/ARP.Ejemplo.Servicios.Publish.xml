@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Publicados\EjemploSeguridad\ARP.AutenticacionSeguridad.Servicios" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="06/14/2011 15:55:05" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="03/14/2011 08:53:11" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Servicios.pdb" publishTime="05/12/2011 16:08:02" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" publishTime="10/26/2010 11:52:39" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Comun.dll" publishTime="05/12/2011 16:07:16" />
+    <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="03/14/2011 08:53:11" />
+    <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="03/14/2011 08:53:11" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Interfaces.pdb" publishTime="05/12/2011 16:07:54" />
+    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="03/14/2011 08:53:11" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Servicios.dll" publishTime="05/12/2011 16:08:02" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Negocio.pdb" publishTime="05/12/2011 16:08:01" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="03/14/2011 08:53:12" />
+    <file relUrl="Seguridad.svc" publishTime="05/11/2011 11:33:43" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Interfaces.dll" publishTime="05/12/2011 16:07:54" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Comun.pdb" publishTime="05/12/2011 16:07:16" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Integracion.pdb" publishTime="05/12/2011 16:07:22" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll" publishTime="03/14/2011 08:53:12" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Integracion.dll" publishTime="05/12/2011 16:07:22" />
+    <file relUrl="bin/ARP.AutenticacionSeguridad.Negocio.dll" publishTime="05/12/2011 16:08:01" />
+  </publishProfile>
+</publishData>
